@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de viaje</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="funciones.js"></script>
+</head>
+<body class="fondoForm">
+
+<header class="izquierda">
+    <button class="izquierda botonF" onclick="aInd()">Regresar</button>
+    <h3 class="centrar">Formulario de viaje</h3>
+    <hr>
+</header>
+<br>
+
+<section class="centrar">
+    <form>
+        <span>
+            Nombre y Apellido:
+            <input class="entrada" type="text" id="name" name="name" required placeholder="Nombre y Apellido">
+        </span>
+        <span class="dot">*</span>
+        <br>
+        <br>
+        <span>
+            Edad:
+            <input class="entrada" type="number" id="age" name="age" required placeholder="Edad" min="0" max="120">
+        </span>
+        <span class="dot">*</span>
+        <br>
+        <br>
+        <span>
+            Telefóno:
+            <input class="entrada" type="text" id="phone" name="phone" placeholder="Telefóno">
+        </span>
+        <span class="dot">*</span>
+        <br>
+        <br>
+        <span>
+            Sexo:
+            Hombre <input class="entrada" type="checkbox" id="male">
+            Mujer <input class="entrada" type="checkbox" id="female">
+        </span>
+        <span class="dot">*</span>
+        <br>
+        <br>
+        <span>
+            Origen:
+            <select class="entrada" id="origen">
+                <option  value="Argentina">Argentina</option>
+                <option value="Francia">Francia</option>
+                <option value="Corea del sur">Corea del Sur</option>
+            </select>
+        </span>
+        <span class="dot">*</span>
+        <br>
+        <br>
+        <span>
+            Destino:
+            <select class="entrada" id="destiny">
+                <option value="Argentina">Argentina</option>
+                <option value="Francia">Francia</option>
+                <option value="Corea del Sur">Corea del Sur</option>
+            </select>
+        </span>
+        <span class="dot">*</span>
+        <br>
+        <br>
+        <button type="button" class="botonF" onclick="aproxPrecio()">Precio aproximado</button>
+        <button type="button" class="botonF" onclick="FormCheck()">Enviar</button>
+        <button type="button" class="botonF" onclick="limpiar()">Limpiar</button>
+    </form>
+    <br>
+    <div class="centrar" id="msg"></div>
+    <br>
+    <div class="centrar" id="costo"></div>
+
+</section>
+
+</body>
+</html>

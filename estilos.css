@@ -1,0 +1,65 @@
+.encuadrado{
+    border: blue dotted 5px;
+    background-color: cornflowerblue;
+}
+
+.ImgLeft{
+    padding: 4px;
+    float: left;
+}
+
+.ImgRight{
+    padding: 4px;
+    float: right;
+}
+
+
+
+.clearFix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.centrar{
+    text-align: center;
+}
+
+.derecha{
+    text-align: right;
+}
+.izquierda{
+    text-align: left;
+}
+
+.dot{
+    color: red;
+}
+
+.fondoInd{
+    background-color: #3b5d8d;
+    color: white;
+}
+
+.boton{
+    background-color: cornflowerblue;
+    color: white;
+    border: darkblue dotted 3px;
+}
+
+.fondoForm{
+    background-color: #262659;
+    color: white;
+}
+
+.botonF{
+    background-color: darkblue;
+    color: white;
+    border: cornflowerblue dotted 3px;
+}
+
+.entrada{
+    background-color: darkblue;
+    color: white;
+    border: cornflowerblue dotted 3px;
+}
